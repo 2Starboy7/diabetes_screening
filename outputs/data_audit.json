@@ -1,0 +1,25 @@
+{
+  "n_rows": 253680,
+  "n_predictors": 21,
+  "missing_cells": 0,
+  "raw_class_counts": {
+    "0": 213703,
+    "1": 4631,
+    "2": 35346
+  },
+  "n_positive": 39977,
+  "n_negative": 213703,
+  "positive_rate": 0.15758830022075054,
+  "repeated_full_rows": 23899,
+  "repeated_predictor_patterns": 25772,
+  "bmi": {
+    "min": 12.0,
+    "p01": 18.0,
+    "median": 27.0,
+    "p99": 50.0,
+    "max": 98.0,
+    "n_above_60": 805,
+    "n_above_p99": 2175
+  },
+  "sha256": "a971809d0786d2d7d7f6070f83dfe8af9d860ea33a79e0e2701c8a49f78f9861"
+}

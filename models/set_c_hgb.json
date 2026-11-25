@@ -1,0 +1,52 @@
+{
+  "description": "Histogram gradient boosting on Set C, trained on the 70% training partition.",
+  "features": [
+    "GenHlth",
+    "Age",
+    "BMI"
+  ],
+  "threshold": 0.5256407577751738,
+  "threshold_rule": "Highest validation threshold with recall >= 0.75",
+  "valid": {
+    "roc_auc": 0.7991921903305306,
+    "average_precision": 0.4189962923606545,
+    "pr_auc_trapezoid": 0.4193147643794662,
+    "prevalence": 0.15757384631556817,
+    "threshold": 0.5256407577751738,
+    "tp": 4501,
+    "fp": 9575,
+    "tn": 22481,
+    "fn": 1495,
+    "recall": 0.7506671114076051,
+    "specificity": 0.7013039680559021,
+    "precision": 0.3197641375390736,
+    "npv": 0.9376459793126459,
+    "f1": 0.44848545237146276,
+    "balanced_accuracy": 0.7259855397317536,
+    "accuracy": 0.7090823084200568,
+    "flagged_share": 0.36991485335856195
+  },
+  "test": {
+    "roc_auc": 0.7993147408207302,
+    "average_precision": 0.41152811945385415,
+    "pr_auc_trapezoid": 0.4116572046309731,
+    "prevalence": 0.1576001261431725,
+    "threshold": 0.5256407577751738,
+    "tp": 4465,
+    "fp": 9482,
+    "tn": 22573,
+    "fn": 1532,
+    "recall": 0.744538936134734,
+    "specificity": 0.7041959132740602,
+    "precision": 0.3201405320140532,
+    "npv": 0.9364447210122381,
+    "f1": 0.44775371038908945,
+    "balanced_accuracy": 0.7243674247043971,
+    "accuracy": 0.7105539787658993,
+    "flagged_share": 0.3665247555976033
+  },
+  "random_seed": 42,
+  "data_sha256": "a971809d0786d2d7d7f6070f83dfe8af9d860ea33a79e0e2701c8a49f78f9861",
+  "sklearn_version": "1.9.1",
+  "created_utc": "2026-11-24T06:38:37+00:00"
+}

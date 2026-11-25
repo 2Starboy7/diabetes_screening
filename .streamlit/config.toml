@@ -1,0 +1,17 @@
+[theme]
+# Teal-blue accent, dark enough for white button text (contrast > 4.5:1).
+primaryColor = "#0B6E8A"
+linkColor = "#0B6E8A"
+baseRadius = "8px"
+# Okabe–Ito colour-blind-safe palette (Set A blue, Set B orange, Set C green first).
+chartCategoricalColors = ["#0072B2", "#E69F00", "#009E73", "#CC79A7", "#56B4E9", "#D55E00", "#999999"]
+
+[theme.dark]
+primaryColor = "#4FB3D1"
+linkColor = "#7CC7DD"
+
+[client]
+toolbarMode = "minimal"
+
+[browser]
+gatherUsageStats = false

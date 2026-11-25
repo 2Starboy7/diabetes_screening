@@ -1,0 +1,75 @@
+{
+  "created_utc": "2026-11-24T06:39:03+00:00",
+  "runtime_seconds": 258.5,
+  "data_file": "diabetes_012_health_indicators_BRFSS2015.csv",
+  "data_sha256": "a971809d0786d2d7d7f6070f83dfe8af9d860ea33a79e0e2701c8a49f78f9861",
+  "python": "3.13.17",
+  "sklearn": "1.9.1",
+  "pandas": "3.1.1",
+  "numpy": "2.5.5",
+  "random_seed": 42,
+  "split_fractions": [
+    0.7,
+    0.15,
+    0.15
+  ],
+  "split": {
+    "train": {
+      "n": 177576,
+      "positives": 27984,
+      "positive_rate": 0.1575888633599135
+    },
+    "validation": {
+      "n": 38052,
+      "positives": 5996,
+      "positive_rate": 0.15757384631556817
+    },
+    "test": {
+      "n": 38052,
+      "positives": 5997,
+      "positive_rate": 0.1576001261431725
+    }
+  },
+  "target_recall": 0.75,
+  "set_c_rule": {
+    "min_valid_roc_auc": 0.78,
+    "min_valid_recall": 0.75
+  },
+  "set_c_selection_method": "Greedy forward selection over Set B with histogram gradient boosting, scored by ROC-AUC on an inner 20% holdout of the TRAINING partition; then top-k validation sweep and the smallest k meeting the rule.",
+  "set_c": [
+    "GenHlth",
+    "Age",
+    "BMI"
+  ],
+  "set_c_rule_met": true,
+  "set_c_vs_preliminary": {
+    "preliminary_features": [
+      "GenHlth",
+      "Age",
+      "BMI"
+    ],
+    "recomputed_features": [
+      "GenHlth",
+      "Age",
+      "BMI"
+    ],
+    "same_features": true,
+    "preliminary_valid_roc_auc": 0.8021,
+    "recomputed_valid_roc_auc": 0.7991921903305306,
+    "preliminary_valid_recall": 0.7518,
+    "recomputed_valid_recall": 0.7506671114076051,
+    "preliminary_threshold": 0.5157,
+    "recomputed_threshold": 0.5256407577751738
+  },
+  "bootstrap_rounds": 300,
+  "stability_seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "resampling": "none (class weighting only)",
+  "rows_removed": 0,
+  "bmi_clipped": false
+}

@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local campaign settings (created at runtime by Tool settings)
+settings/
+
+# Streamlit secrets (none are needed, but never commit them)
+.streamlit/secrets.toml
+
+# Packaging leftovers
+*.zip
+diabetes-screening-prototype/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

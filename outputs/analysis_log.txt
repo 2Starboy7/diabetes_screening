@@ -1,0 +1,48 @@
+﻿[12:04:44] Loading C:\Users\MSI\AppData\Local\Claude-Data\anthropicpbc.claude_fnn82j28hfe8t\scratch-workspaces\da9f1400-c274-4837-a8ee-8714237dbdc9\6fd863d3-6107-4ed3-a421-76c690bbd178\scratch-2026-11-19-56394b\diabetes-screening-prototype\data\raw\diabetes_012_health_indicators_BRFSS2015.csv
+[12:04:45] Rows=253,680  positives=39,977 (0.1576)  missing=0  repeated full rows=23,899  repeated predictor patterns=25,772
+[12:04:45] Split sizes: {'train': 177576, 'validation': 38052, 'test': 38052}
+[12:04:45] Ranking Set B features by greedy forward selection on TRAINING data only
+[12:04:53]   forward step  1: +GenHlth              inner AUC=0.7271
+[12:05:02]   forward step  2: +Age                  inner AUC=0.7716
+[12:05:13]   forward step  3: +BMI                  inner AUC=0.8039
+[12:05:23]   forward step  4: +Income               inner AUC=0.8057
+[12:05:33]   forward step  5: +Sex                  inner AUC=0.8078
+[12:05:42]   forward step  6: +HvyAlcoholConsump    inner AUC=0.8094
+[12:05:51]   forward step  7: +DiffWalk             inner AUC=0.8102
+[12:06:00]   forward step  8: +Education            inner AUC=0.8107
+[12:06:08]   forward step  9: +AnyHealthcare        inner AUC=0.8110
+[12:06:15]   forward step 10: +PhysActivity         inner AUC=0.8111
+[12:06:21]   forward step 11: +MentHlth             inner AUC=0.8109
+[12:06:26]   forward step 12: +Fruits               inner AUC=0.8110
+[12:06:31]   forward step 13: +Smoker               inner AUC=0.8112
+[12:06:34]   forward step 14: +NoDocbcCost          inner AUC=0.8108
+[12:06:36]   forward step 15: +Veggies              inner AUC=0.8109
+[12:06:37]   forward step 16: +PhysHlth             inner AUC=0.8106
+[12:06:38] Validation sweep over top-k features (k = 1..16)
+[12:06:59] Selected Set C (k=3, rule met=True): ['GenHlth', 'Age', 'BMI']
+[12:06:59] Fitting Set A / Logistic regression (21 features)
+[12:07:05]    test AUC=0.8175 AP=0.4290 recall=0.7519 spec=0.7336 prec=0.3455 thr=0.5099
+[12:07:05] Fitting Set A / Random forest (21 features)
+[12:07:27]    test AUC=0.8205 AP=0.4524 recall=0.7564 spec=0.7338 prec=0.3471 thr=0.4155
+[12:07:27] Fitting Set A / Histogram gradient boosting (21 features)
+[12:07:34]    test AUC=0.8261 AP=0.4588 recall=0.7547 spec=0.7420 prec=0.3537 thr=0.5369
+[12:07:34] Fitting Set B / Logistic regression (16 features)
+[12:07:40]    test AUC=0.7967 AP=0.3894 recall=0.7397 spec=0.7126 prec=0.3250 thr=0.4918
+[12:07:40] Fitting Set B / Random forest (16 features)
+[12:08:01]    test AUC=0.7972 AP=0.4071 recall=0.7497 spec=0.6995 prec=0.3182 thr=0.3933
+[12:08:01] Fitting Set B / Histogram gradient boosting (16 features)
+[12:08:09]    test AUC=0.8068 AP=0.4237 recall=0.7472 spec=0.7162 prec=0.3300 thr=0.5270
+[12:08:09] Fitting Set C / Logistic regression (3 features)
+[12:08:15]    test AUC=0.7916 AP=0.3812 recall=0.7432 spec=0.6998 prec=0.3165 thr=0.4858
+[12:08:15] Fitting Set C / Random forest (3 features)
+[12:08:29]    test AUC=0.7923 AP=0.3970 recall=0.7445 spec=0.6965 prec=0.3145 thr=0.5048
+[12:08:29] Fitting Set C / Histogram gradient boosting (3 features)
+[12:08:36]    test AUC=0.7993 AP=0.4115 recall=0.7445 spec=0.7042 prec=0.3201 thr=0.5256
+[12:08:37] Saved Set C model to models\set_c_hgb.joblib
+[12:08:38] Saved screening-tool models and threshold grid
+[12:08:43] Stability seed 42 done
+[12:08:47] Stability seed 43 done
+[12:08:51] Stability seed 44 done
+[12:08:57] Stability seed 45 done
+[12:09:02] Stability seed 46 done
+[12:09:03] Done in 258.5 s
